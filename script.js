@@ -1,6 +1,6 @@
 const textarea_element = document.querySelector('#txt_area');
 const counter_element = document.querySelector('#counter');
-const tweent_element = document.querySelector('#tweet');
+const tweet_element = document.querySelector('#tweet');
 
 
 function characterCount(){
@@ -9,11 +9,12 @@ function characterCount(){
 
     if(length > 280)
     {
-        tweent_element.setAttribute('disabled', 1);
+        tweet_element.setAttribute('disabled', 1);
+        
     }
     else
     {
-        tweent_element.removeAttribute('disabled');
+        tweet_element.removeAttribute('disabled');
     }
 }
 
